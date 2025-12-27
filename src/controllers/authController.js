@@ -14,7 +14,6 @@ const generateToken = (id) => {
 // @access  Public
 const registerUser = async (req, res) => {
     const { name, email, password, contact, nid } = req.body;
-    console.log('Register Request:', req.body);
 
     try {
         if (!name || !email || !password || !contact || !nid) {
